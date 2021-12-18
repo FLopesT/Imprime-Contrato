@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div style="display: block;" id="lacre">
+
+        <div class="pag"><img class="cabecalhoImg" src="./images/Cabeçalho arte.png" alt="">
+            <div class="pageContainer">
+
+                <div id="printTab">
+
+                    <p>"Antes de imprimir vá para mais definições, em margens selecione a opção nenhuma, esse processo garante a correta impressão do documento."</p>
+                    <button id="btnPrint">Imprimir</button>
+
+                </div>
+
+                <p style="margin-bottom: 0;" class="roboto padding50">Por estarem assim justos e contratados, firmam o
+                    presente instrumento, em 02 (duas) vias de igual teor, diante de 2 (duas) testemunhas, que também o
+                    subscrevem.</p>
+                <div id="asPage" class="editBorder padding50 roboto"><button class="editButtonRight" id="editLastPage"
+                        style="">Editar</button>
+                    <div class="asDiv" id="contratante">
+                        <div class="asDiv2"><img class="line" src="./images/line.png">
+                            <p>CONTRATANTE</p>
+                            <p id="lFantasia"><strong></strong></p>
+                            <p id="lName">NOME: </p>
+                            <p id="lCpf">CPF N°: </p>
+                        </div>
+                        <div id="floatTest">
+                            <p>TESTEMUNHAS :</p>
+                        </div>
+                        <div class="asDiv2"><img class="line" src="./images/line.png">
+                            <p><strong>TESTEMUNHA 1</strong></p><input class="nameInput" n="0" placeholder="Nome"
+                                type="text">
+                            <p class="nameL">NOME:</p><input class="cpfInput" n="0" autocomplete="off" maxlength="14"
+                                placeholder="Cpf n°" type="text">
+                            <p class="cpfL">CPF N°:</p>
+                        </div>
+                    </div>
+                    <div class="asDiv" id="contratada">
+                        <div class="asDiv2"><img class="line" src="./images/line.png">
+                            <p>CONTRATADA</p>
+                            <p><strong>EMPRESA LTDA</strong></p><input class="nameInput" n="1" placeholder="Nome"
+                                type="text">
+                            <p class="nameL">NOME:</p><input class="cpfInput" n="1" autocomplete="off" maxlength="14"
+                                placeholder="Cpf n°" type="text">
+                            <p class="cpfL">CPF N°:</p>
+                        </div>
+                        <div class="asDiv2"><img class="line" src="./images/line.png">
+                            <p><strong>TESTEMUNHA 2</strong></p><input class="nameInput" n="2" placeholder="Nome"
+                                type="text">
+                            <p class="nameL">NOME:</p><input class="cpfInput" n="2" autocomplete="off" maxlength="14"
+                                placeholder="Cpf n°" type="text">
+                            <p class="cpfL">CPF N°:</p>
+                        </div>
+                    </div>
+                </div>
+            </div><img class="rodapeImg" src="./images/Rodapé arte.png" alt="">
+        </div>
+
+    </div>
+    <script src="/script/interface.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,659 @@
+
+body{
+    position: relative;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.pag{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 21cm;
+    min-width: 21cm;
+    height: 29.7cm;
+    margin: auto;
+    margin-bottom: 0.5px;
+    overflow: hidden; 
+}
+
+button{
+    cursor: pointer;
+}
+
+#lacre{
+    display: none;
+}
+
+#printTab{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    align-items: center;
+    width: 600px;
+    height: 150px;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    bottom: 40px;
+}
+
+#btnPrint{
+    height: 50px;
+    width: 100px;
+}
+
+#printTab p{
+    width: 300px;
+    color: red;
+}
+
+.editButton{
+    display: none;
+    position: absolute;
+    top : 3px; 
+    left: 3px;
+    height: 30px;
+}
+
+.editButtonRight{
+    display: none;
+    position: absolute;
+    top : 3px; 
+    right: 3px;
+    height: 30px;
+}
+
+.pag h1{
+    color:rgb(192, 0, 0);
+}
+
+.cabecalhoImg{
+    width: 100%;
+    height: 145.625px;
+}
+
+.rodapeImg{
+    width: 100%;
+    height: 96.453PX;    
+}
+
+.editBorder{
+    border: 2px dotted white;
+}
+
+.editBorder:hover{
+    border-color: rgba(255, 0, 0, 0.651);    
+}
+
+.pageContainer{
+    background-color: white;
+    position: relative;
+    height: calc( 100% - 242.078px );
+}
+
+.padding50{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+/*Nome da proposta-------------------------------------------*/
+
+#pageContainer_titulo{
+    margin: 0;
+}
+
+#proposalName{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40%;
+}
+
+#pNEditArea{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+#pNTextArea{
+    width: 80%;
+    height: 20px;
+}
+
+
+.applyBtn{
+    margin: 0;
+    height: 30px; 
+    margin-top:10px;   
+}
+
+#pNH1{
+    text-align: center;
+    max-width: 600px;
+}
+
+/*Logo da Empresa--------------------------------------*/
+
+#logoArea{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    margin-top: 10px;    
+}
+
+#cancel2{
+    display: none;
+    margin-top: 10px;
+}
+
+#LogoBtns{
+    margin-top: 10px;
+    display: none;
+    height: 50px;
+}
+
+#LogoBtns button{
+    height: 40px; 
+}
+
+#LogoEmpresa{
+    display: none;
+    height: 50%;
+}
+
+/*dados de cliente e contratante-----------------------------*/
+#date{ 
+   margin-top: 10px;
+   width:fit-content;
+}
+
+h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.0em;
+    margin: 20px;
+    margin-left: 0;
+}
+
+.Blue-h2{
+    color: rgb(62, 88, 152);
+}
+
+.Red-h2{
+    margin: 0;
+    margin-top: 14.608px;
+    color: rgb(192, 0, 0);
+    font-weight: 600;
+}
+
+.big-p{
+    font-family: system-ui, system-ui, sans-serif;
+    font-weight: 600;
+    margin: 0;
+    font-size: 0.95em;
+}
+
+
+.radioP{
+    position: relative;
+    display: flex;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-left: 32px;
+    font-size: 1em;
+    text-align: justify;
+
+}
+
+.radioP input{
+    position: relative;
+    bottom: 2px;;
+    width: 0.9em;
+    height: 0.9em;
+    background-color: white;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 1px solid rgb(70, 69, 69);
+    appearance:unset;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+    margin-right: 8px;
+    margin-left: 5px;
+}
+
+
+.radioP input:checked {
+    background-color: rgb(255, 255, 255);
+}
+
+.itemH2{
+    margin: 12px;
+    margin-bottom: 0;    
+}
+
+.destaque{
+    margin-left: -16px;
+    font-weight: 500;
+}
+
+.destaque input{
+    margin-right: 15px;
+}
+
+#contracted{
+    position: relative;
+}
+
+/*inputs dados de contrato-------------------------*/
+
+.inputData{
+    width: 300px;
+    height: 15px;
+    margin-bottom: 1px;
+    box-shadow: 0 0 0 0;
+    border: black 1px solid;
+    outline: 0;
+}
+
+.inputData:focus{
+    border: black 1px solid;  
+}
+
+.inputDiv{
+    position: absolute;
+    display:none;
+    flex-direction: column;
+}
+
+#inputDiv0{
+left: 23%;
+top: 13%;
+}
+
+#inputDiv1{
+bottom: 0%;
+left: 29%;
+}
+
+#applyDataBtn{
+    display: none;
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    margin: 0;
+}
+
+/*controle adicionar itens---------------------------------------------*/
+
+#addItemBtn{
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    margin-top: 20px;
+    border-radius: 10px;
+    top:10%; 
+    left:50%; 
+    transform:translate(-50%, -50%); 
+}
+
+#addItemTab{
+    margin-top: 120px;
+    border-radius: 3px;
+    border: black 1px solid;
+    display: none;
+    grid-template-areas: "il c""il ri""il  g";
+    position: absolute;
+    top:40%; 
+    left:50%; 
+    transform:translate(-50%, -50%); 
+    width: 500px;
+    height: 200px;
+    background-color: rgb(158, 151, 151);
+}
+
+#itemList{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgb(228, 169, 169);
+    height: 200px;
+    grid-area: il;
+    width: 420px;
+    overflow: hidden;
+}
+
+#itemList div{
+    display: flex;
+
+}
+
+#itemList input{
+    height: 12px;
+    display: block;
+}
+
+#removeItemBtn{
+    height: 50px;
+    grid-area:  ri;
+}
+
+.pGenerator{
+    margin: 0;
+    margin-left: 4px;
+    font-size: 0.9em;
+    display: flex;
+}
+
+#generator{
+    height: 100px;
+    width: 80px;
+    grid-area: g;
+}
+
+#close{
+    height: 50px;
+    grid-area: c;
+}
+
+#fixedGenerationDiv{
+    padding-left:50px;
+    padding-right: 50px;
+    position: relative;
+    max-height: 285px;
+    
+}
+
+/*pós adição dos items*/
+
+h4{
+    margin: 0;
+}
+
+.pleft{
+    margin: 0;
+    margin-left: 10px;
+    font-size: 1em;
+}
+
+#local{
+    cursor: pointer;
+    position: relative;
+    height: 47.955px;
+    width: 690px;
+    margin: 0;
+}
+
+#local h4{
+    position: relative;
+    bottom: -28px;
+    left: 6px;
+    width: 642px;
+    font-size: 0.8em;
+}
+
+#divAddress{
+    position: relative;
+    width: 38px;
+    right: -650.5px;
+    bottom: -8px;
+}
+
+/*troca por div pelo amor de deus*/
+#local p{
+    font-weight: 500;
+    margin: 0;
+}
+
+.noBorderInput textarea:focus, input:focus, select:focus{
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+ 
+
+
+#address{
+    display: none;
+    position: absolute;
+    width: 630px;
+    left: 7px;
+    bottom: 3px;
+    border: none;
+}
+
+#uff{
+    display: none;
+    position: absolute;
+    right: -2px;
+    bottom: 2px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0)
+}
+
+.roboto{
+    font-family: Roboto, 'Segoe UI', Tahoma, sans-serif;
+}
+
+.roboto p{
+    font-weight: 450;
+}
+
+.bt{
+    width: 650px;
+    height: 24px;
+}
+
+.lt{
+    text-align: center;
+    width: 40px;
+    height: 22px;
+}
+
+.margin2{
+    margin: 2px;
+}
+
+.marginLeft{
+    margin-left: 36px;    
+}
+
+#tabela3Title{
+    width:690px; 
+    height:25px;
+}
+
+#localEditBtn{
+    display: none;
+    position: absolute;
+    left: 45%;
+    top: 40px;
+}
+
+.tabBlock{
+    display: flex;
+    justify-content: flex-start;
+    width: 690px;
+    height: 40px;
+}
+
+.tabBlock div{
+    position: relative;
+    align-items: center;
+    height: 38px;
+}
+
+.tabBlock input{
+    display: none;
+    border: none;
+    position: absolute;
+    background-color: rgb(228, 169, 169);
+}
+
+.flexCenter{
+    display: flex;
+    justify-content: center;
+}
+
+.itemBlock{
+    border: 1.5px solid black;
+    width: 49.7px;
+}
+
+.tabBlock p{
+    font-weight: 600;
+    margin: 0;
+    font-size: 0.9em;
+}
+
+.itemNameBlock{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border: 1.5px solid black;
+    border-left: none;
+    width: 377.4px;    
+}
+
+.itemQuant{
+    border: 1.5px solid black;
+    border-left: none;
+    width: 68px;
+}
+
+.itemQuant input{
+    width: 60px;
+}
+
+.itemUni{
+    border: 1.5px solid black;
+    border-left: none;
+    width: 92px;    
+}
+
+.itemUni input{
+    width: 70px;
+}
+
+.subTotal{
+    border: 1.5px solid black;
+    border-left: none;
+    width: 94px;        
+}
+
+.subTotal input{
+    width: 70px;
+}
+
+#totalFinal{
+    width: 690px;
+    height: 120px;
+}
+
+#totalPrice{
+    position: relative;
+    width: 100%;
+    height: 35px;
+}
+
+#totalPrice p{
+    font-size: 0.9em;
+    font-weight: 500;
+    text-align: center;
+    position: absolute;
+    width: 93px;
+    color: white;
+    right: 2px;
+    bottom: 7px;
+    margin: 0;
+}
+
+#descrição{
+    border: 1px solid black;
+    border-top: none;
+    width: 688px;
+    height: 85px;    
+}
+
+#asPage{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+#asPage input{
+    box-shadow: 0 0 0 0;
+    border: black 0.5px solid;
+    outline: 0;
+    position: relative;
+    display: none;
+    width: 328px;
+}
+
+.asDiv{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 400px;
+    width: 48.7%;
+}
+
+.line{
+    width:100%; 
+    height:1px;
+}
+
+.asDiv p{
+    position: relative;
+    font-size: 0.85em;
+    margin: 0px;
+}
+
+.asDiv div{
+    width: 100%;
+    text-align: center;
+}
+
+#floatTest{
+    width:fit-content;
+    position: absolute;
+    top : 150px;
+    left: -10px;
+}
+
+.nameInput{
+    left: 0px;
+}
+
+.cpfInput{
+    top: 10px;
+}
+
+.asDiv2{
+    min-height: 142px;
+    position: relative;
+    overflow: visible;
+}
+
+@media print {
+    #totalPrice p {
+      color: rgba(0, 0, 0, 0);
+      text-shadow: 0 0 0 #ccc;
+    }
+
+    @media print and (-webkit-min-device-pixel-ratio:0) {
+        #totalPrice p {
+        color: white;
+        -webkit-print-color-adjust: exact;
+      }
+    }
+}

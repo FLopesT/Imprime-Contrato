@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="icon" href="/images/icon.png">
+    <title>CONTRATO</title>
+</head>
+
+<body>
+
+    <div id="testeTamanho" style="display: none; height: fit-content;"></div>
+
+    <div class="pag" id="title">
+        <img class="cabecalhoImg" src="./images/Cabeçalho arte.png" alt="">
+        <div id="pageContainer_titulo" class="pageContainer">
+
+            <div class="editBorder" id="proposalName">
+
+                <div id="pNEditArea">
+
+                    <input id="pNTextArea" placeholder="Nome da Proposta" type="text">
+                    <button class="applyBtn" id="pNApply">Aplicar</button>
+
+                </div>
+
+                <button class="editButton" id="editTitle">Editar</button>
+
+                <h1 id="pNH1">NOME DA PROPOSTA</h1>
+
+            </div>
+            <div class="editBorder" id="logoArea">
+
+                <button class="editButton" id="editLogo">Editar</button>
+
+                <h1>LOGO DA EMPRESA</h1>
+
+                <img id="LogoEmpresa" src="" alt="">
+
+                <input id="imgSelect" type="file" accept="image/*">
+                <button id="cancel2">cancelar</button>
+
+                <div id="LogoBtns">
+                    <button id="acceptImage">confirmar</button>
+                    <button id="acceptCancel">X</button>
+                </div>
+
+            </div>
+
+        </div>
+        <img class="rodapeImg" src="./images/Rodapé arte.png" alt="">
+
+    </div>
+
+    <div class="pag" id="proposalData">
+
+        <img class="cabecalhoImg" src="./images/Cabeçalho arte.png" alt="">
+        <div class="pageContainer" id="proposalDataContainer">
+
+            <p id="date">Rio Pomba,</p>
+
+            <div id="contracted" class="editBorder padding50">
+
+                <h2 style="margin-top: 0;" class="Blue-h2">1. &nbsp; &nbsp; DADOS DA CONTRATANTE</h2>
+
+                <button class="editButtonRight" id="editContracted">Editar</button>
+                <button id="applyDataBtn" class="applyBtn">Aplicar</button>
+
+                <div class="inputDiv" id="inputDiv0">
+                    <input id="fantasia" autocomplete="off" placeholder="Nome Fantasia" class="inputData" type="text">
+                    <input id="razao" autocomplete="off" placeholder="Razão Social" class="inputData" type="text">
+                    <input id="cnpj" placeholder="Cnpj nº" autocomplete="off" maxlength="18"
+                        class="inputData" type="text">
+                    <input id="endereco" autocomplete="off" placeholder="Endereço" class="inputData" type="text">
+                    <input id="telfixo" autocomplete="off" placeholder="Telefone Fixo" class="inputData" type="text">
+                </div>
+                <div class="inputDiv" id="inputDiv1">
+                    <input id="nome" autocomplete="off" placeholder="Nome Completo" class="inputData" type="text">
+                    <input id="cpf" autocomplete="off" placeholder="Cpf n°" maxlength="14" class="inputData" type="text">
+                    <input id="rg" autocomplete="off" placeholder="rg nº" maxlength="13"
+                        class="inputData" type="text">
+                    <input id="data" class="inputData" type="date">
+                    <input id="telefone" autocomplete="off" placeholder="Telefone Celular" class="inputData"
+                        type="text">
+                    <input id="email" autocomplete="off" placeholder="E-mail" class="inputData" type="email">
+                </div>
+
+                <h2 style="margin-top: 0;" id="fantasyName" class="Red-h2">NOME FANTASIA :</h2>
+                <p class="big-p">RAZÃO SOCIAL :</p>
+                <p class="big-p">CNPJ Nº. :</p>
+                <p class="big-p">ENDEREÇO :</p>
+                <p class="big-p">TELEFONE FIXO :</p>
+                <h2 class="Red-h2">REPRESENTANTE LEGAL</h2>
+                <p class="big-p">NOME COMPLETO :</p>
+                <p class="big-p">CPF Nº. :</p>
+                <p class="big-p">RG Nº. :</p>
+                <p class="big-p">DATA DE NASCIMENTO :</p>
+                <p class="big-p">TELEFONE CELULAR :</p>
+                <p class="big-p">E-MAIL :</p>
+            </div>
+
+            <div class="padding50" id="hired">
+
+                <h2 class="Blue-h2">2. &nbsp; &nbsp; DADOS DA CONTRATADA</h2>
+
+                <h2 class="Red-h2">EMPRESA - SERVIÇOS. VENDAS. SUPÓRTE</h2>
+                <p class="big-p" id="no">
+                    RAZÃO SOCIAL : EMPRESA LTDA.<br>
+                    DATA DE ABERTURA : 01/01/2000<br>
+                    CNPJ : 99.999.999/9999-99<br>
+                    IE : 99.999.999/999-99<br>
+                    LOGRADOURO: RUA DA BANANA 999 SALA 123 - ZONA COMERCIAL - RIO POMBA/MG<br> CEP: 36.180-000.
+                </p>
+
+                <h2 style="margin-bottom: 0;" class="Blue-h2">3. &nbsp; &nbsp; ESCOPO DA PROPOSTA</h2>
+
+            </div>
+
+            <div id="fixedGenerationDiv">
+
+                <button id="addItemBtn">Criar Itens</button>
+
+                <div id="addItemTab">
+
+
+                    <div id="itemList">
+                        <div>
+                            <input value="BACKUP EM NUVEM" n="0" name="item" type="checkbox">
+                            <p class="pGenerator">BACKUP EM NUVEM</p>
+                            <p n="0" class="pGenerator itemName"></p>
+                        </div>
+                        <div>
+                            <input value="DESENVOLVIMENTO E GESTÃO DE WEBSITE" n="1" name="item" type="checkbox">
+                            <p class="pGenerator">DESENVOLVIMENTO E GESTÃO DE WEBSITE</p>
+                            <p n="1" class="pGenerator itemName"></p>
+                        </div>
+                        <div>
+                            <input value="GESTÃO DE INFRAESTRUTURA N3 (AVANÇADO)" n="2" name="item" type="checkbox">
+                            <p class="pGenerator">GESTÃO DE INFRAESTRUTURA N3 (AVANÇADO)</p>
+                            <p n="2" class="pGenerator itemName"></p>
+                        </div>
+                        <div>
+                            <input value="SUPORTE À USUÁRIO" n="3" name="item" type="checkbox">
+                            <p class="pGenerator">SUPORTE À USUÁRIO</p>
+                            <p n="3" class="pGenerator itemName"></p>
+                        </div>
+                        <div>
+                            <input value="MONITORAMENTO DE INFRAESTRUTURA DE TI" n="4" name="item" type="checkbox">
+                            <p class="pGenerator">MONITORAMENTO DE INFRAESTRUTURA DE TI</p>
+                            <p n="4" class="pGenerator itemName"></p>
+                        </div>
+                        <div>
+                            <input value="TELEFONIA IP" n="5" name="item" type="checkbox">
+                            <p class="pGenerator">TELEFONIA IP</p>
+                            <p n="5" class="pGenerator itemName"></p>
+
+                        </div>
+                        <div>
+                            <input value="MARKETING DIGITAL" n="6" name="item" type="checkbox">
+                            <p class="pGenerator">MARKETING DIGITAL</p>
+                            <p n="6" class="pGenerator itemName"></p>
+                        </div>
+
+                    </div>
+
+                    <button id="generator">Gerar</button>
+                    <button id="removeItemBtn">Remover Item</button>
+                    <button id="close">sair</button>
+                </div>
+
+            </div>
+
+        </div>
+
+        <img class="rodapeImg" src="./images/Rodapé arte.png" alt="">
+
+    </div>
+
+    <div id="lacre">
+    
+        
+        
+    </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://igorescobar.github.io/jQuery-Mask-Plugin/js/jquery.mask.min.js"></script>
+    <script src="./script/storage.js"></script>
+    <script src="./script/interface.js"></script>
+</body>
+
+</html>
